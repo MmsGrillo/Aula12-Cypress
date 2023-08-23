@@ -1,4 +1,5 @@
 class Checkout{
+    
     finalizarCompra(nome, sobrenome, empresa, pais, rua, numeroRua, cidade, estado, cep, celular, email){
         cy.visit('checkout')
         cy.get('#billing_first_name').clear().type(nome)

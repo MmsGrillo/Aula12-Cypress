@@ -1,6 +1,21 @@
 /// <reference types="cypress" />
 import AddProduto from "../support/page_objects/produtos.page"
 import Checkout from "../support/page_objects/checkout.page";
+import { fakerPT_BR } from "@faker-js/faker";
+
+const nome = fakerPT_BR.person.firstName()
+const sobrenome = fakerPT_BR.person.lastName()
+const empresa = fakerPT_BR.company.name()
+const rua = fakerPT_BR.location.street()
+const numeroRua = fakerPT_BR.number.int({ min: 1, max: 9999 })
+const cidade = fakerPT_BR.location.city()
+const estado = fakerPT_BR.location.state()
+const cep = fakerPT_BR.location.zipCode()
+const celular = fakerPT_BR.phone.number('+55 11 ##### ####')
+const email = fakerPT_BR.internet.email({ firstName: nome})
+
+
+
 
 context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     /*  Como cliente 
@@ -24,7 +39,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         AddProduto.addHollisterBackyardSweatshirt('XL', 'White', 1)
         AddProduto.addOsloTrekHoodie('M', 'Purple', 1)
        
-       Checkout.finalizarCompra('Bicho', 'da Goiaba', 'EBAC', 'brasil', 'Av. Brasil', '222', 'São Paulo', 'São paulo', '01001001', '+5511987654321', 'aluno_ebac@teste.com') 
+       Checkout.finalizarCompra(nome, sobrenome, empresa, 'brasil', rua, numeroRua, cidade, estado, cep, celular, email) 
        //TODO 
     });
 
