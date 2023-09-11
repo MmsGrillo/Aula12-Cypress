@@ -15,7 +15,6 @@ class Checkout{
         cy.get('#billing_email').clear().type(email)
         cy.get('#terms').click()
         cy.get('#place_order').click()
-        cy.get('.woocommerce-notice').should('Obrigado. Seu pedido foi recebido.')
     }
 
 }

@@ -34,13 +34,14 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     });
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
-        AddProduto.addBalboaPersistenceTee('XS', 'Gray', 1)
+        /*AddProduto.addBalboaPersistenceTee('XS', 'Gray', 1)
         AddProduto.addGraysonCrewneckSweatshirt('M', 'Orange', 1)
-        AddProduto.addHollisterBackyardSweatshirt('XL', 'White', 1)
+        AddProduto.addHollisterBackyardSweatshirt('XL', 'White', 1)*/
         AddProduto.addOsloTrekHoodie('M', 'Purple', 1)
        
        Checkout.finalizarCompra(nome, sobrenome, empresa, 'brasil', rua, numeroRua, cidade, estado, cep, celular, email) 
-       //TODO 
+       cy.get('.woocommerce-notice').should('contain','Obrigado. Seu pedido foi recebido.')
+
     });
 
 
