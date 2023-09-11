@@ -39,8 +39,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         AddProduto.addHollisterBackyardSweatshirt('XL', 'White', 1)*/
         AddProduto.addOsloTrekHoodie('M', 'Purple', 1)
        
-       Checkout.finalizarCompra(nome, sobrenome, empresa, 'brasil', rua, numeroRua, cidade, estado, cep, celular, email) 
-       cy.get('.woocommerce-notice').should('contain','Obrigado. Seu pedido foi recebido.')
+       Checkout.finalizarCompra(nome, sobrenome, empresa, 'brasil', rua, numeroRua, cidade, estado, cep, celular, email)
 
     });
 

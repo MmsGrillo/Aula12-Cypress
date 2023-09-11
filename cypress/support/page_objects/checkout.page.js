@@ -14,7 +14,8 @@ class Checkout{
         cy.get('#billing_phone').clear().type(celular)
         cy.get('#billing_email').clear().type(email)
         cy.get('#terms').click()
-        cy.get('#place_order').click()
+        cy.get('#place_order').click() 
+        cy.get('.woocommerce-notice').should('contain','Obrigado. Seu pedido foi recebido.')
     }
 
 }
