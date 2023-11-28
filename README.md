@@ -1,54 +1,5 @@
 # Testes End to End - Ebac Shop
-### Exercício para os alunos de Qualidade de software da EBAC 
 
-Ebac shop: http://lojaebac.ebaconline.art.br/
+▪		Nesse projeto foi feita a automatização dos cenários tendo como cliente querendo acessar a loja EBAC para fazer um pedido de 4 produtos, fazendo a escolha dos produtos, adicionando ao carrinha, preenchendo todo o formulário de checkout com massa de dados e validando a compra no final.
 
-## Clonando e executando em sua máquina
-
-### Pré-requisito:
-
--Node.js - Você encontra em: https://nodejs.org/en/
-
--Visual Studio Code ou qualquer editor de texto - você encontra em: https://code.visualstudio.com/download
-
--Git: você encontra em: https://git-scm.com/downloads
-
-
-Via terminal, rode os seguintes comandos:
-```  
-git clone https://github.com/EBAC-QE/testes-e2e-ebac-shop.git
-```
-```
-cd testes-e2e-ebac-shop
-```
-
-#### Para instalar as dependencias:
-```
-npm install 
-```
-
-#### Para executar em moodo Headlesss via console:
-```
-npx cypress run
-```
-
-#### Para executar via Dashboard:
-```
-npx cypress open 
-```
-Após abrir o dasboard, clique na opção "Running integration tests" para rodar todos os testes.
-
-
-### Bibliotecas de apoio:
--Cypress: Framework de automação: https://cypress.io/
-
--Faker: Biblioteca para geração de massa de dados: https://www.npmjs.com/package/faker
-
-
-### Bom exercício ;) 
-Fábio & José Ernesto
-Qualidade de software
-
-
-
-
+▪	Cypress, comandos customizados, fixtures, pages, GIT, massa de dados, gherkin, Visual Studio Code, Node JS.
